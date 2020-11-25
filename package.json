@@ -1,0 +1,79 @@
+{
+  "name": "tdt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "lint": "npm run lint:js",
+    "cz:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "start": "nuxt start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.0",
+    "@types/core-js": "^2.5.3",
+    "@types/js-cookie": "^2.2.6",
+    "@types/mockjs": "^1.0.3",
+    "@types/qs": "^6.9.4",
+    "axios": "^0.20.0",
+    "clipboard": "^2.0.6",
+    "core-js": "^2.5.7",
+    "element-ui": "^2.13.2",
+    "highlight.js": "^10.2.0",
+    "js-cookie": "^2.2.1",
+    "mock": "^0.1.1",
+    "mockjs": "^1.1.0",
+    "nuxt": "^2.14.0",
+    "qs": "^6.9.4",
+    "scss": "^0.2.4",
+    "scss-loader": "0.0.1",
+    "x2js": "^3.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@vue/test-utils": "^1.0.3",
+    "@ziyi2/vue-cli-plugin-ui-cz": "~1.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "commitizen": "^3.0.5",
+    "conventional-changelog": "^3.0.5",
+    "cz-conventional-changelog": "^3.2.0",
+    "cz-customizable": "^5.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "esri-loader": "^2.15.0",
+    "fibers": "^5.0.0",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "vue-jest": "^3.0.4"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

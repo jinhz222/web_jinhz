@@ -1,0 +1,30 @@
+{
+  "id": "2009653",
+  "name": "xz_tdt",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "西藏天地图",
+  "glyphs": [
+    {
+      "icon_id": "1411037",
+      "name": "路线11",
+      "font_class": "luxian",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "5640058",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "2683503",
+      "name": "图层",
+      "font_class": "tuceng",
+      "unicode": "e709",
+      "unicode_decimal": 59145
+    }
+  ]
+}
